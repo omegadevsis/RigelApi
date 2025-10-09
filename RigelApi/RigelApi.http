@@ -1,0 +1,6 @@
+@RigelApi_HostAddress = http://localhost:5127
+
+GET {{RigelApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
