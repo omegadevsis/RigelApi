@@ -7,27 +7,27 @@ public class ProductRepository:IProductRepository
 {
     public List<Product> Get()
     {
-        var products = new List<Product>();
-        var product1 = new Product(1, "Arroz");
-        var product2 = new Product(2, "Feijao");
-        var product3 = new Product(3, "Carne");
-            
-        products.Add(product1);
-        products.Add(product2);
-        products.Add(product3);
-        
-        return products;
+        // var products = new List<Product>();
+        // var product1 = new Product(1, "Arroz");
+        // var product2 = new Product(2, "Feijao");
+        // var product3 = new Product(3, "Carne");
+        //     
+        // products.Add(product1);
+        // products.Add(product2);
+        // products.Add(product3);
+        //
+        return null;
     }
 
-    public Product Create(int id, string name)
+    public Product Create(Product product)
     {
-        var product1 = new Product(id, name);
-        return product1;
+        //var product1 = new Product(id, name);
+        return product;
     }
 }
 
 public interface IProductRepository
 {
     List<Product> Get();
-    Product Create(int id, string name);
+    Product Create(Product product);
 }
