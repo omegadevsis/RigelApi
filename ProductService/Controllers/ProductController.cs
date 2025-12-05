@@ -20,6 +20,7 @@ public class ProductController(ILogger<ProductController> logger, IProductReposi
     {
         try
         {
+            var l = 3;
             return Ok(productRepository.Get());
         }
         catch (Exception ex)
